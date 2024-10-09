@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #282c34;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+canvas {
+    border: 2px solid #fff; /* Borde alrededor del área de juego */
+    background-color: #222; /* Fondo del área de juego */
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #61dafb; /* Color de fondo de los botones */
+    color: black;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #21a1f1; /* Cambio de color al pasar el mouse */
+}
+
+#move-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#move-buttons button {
+    width: 80px; /* Ajusta el tamaño */
+    height: 80px; /* Ajusta el tamaño */
+    font-size: 20px; /* Aumenta el tamaño de la fuente */
+    margin: 10px; /* Espacio entre botones */
+    border: none;
+    border-radius: 5px;
+    background-color: #61dafb;
+    color: black;
+    transition: background-color 0.3s;
+}
+
+#move-buttons button:hover {
+    background-color: #21a1f1; /* Cambio de color al pasar el mouse */
+}
+
+#gameOver {
+    font-size: 30px;
+    color: red;
+    display: none;
+    margin-top: 20px;
+}
